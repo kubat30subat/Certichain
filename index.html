@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CertiChain – Blockchain ile Güvenli Diploma Doğrulama</title>
+  <meta name="description"
+    content="CertiChain, diploma ve sertifikalarınızı blockchain teknolojisiyle güvence altına alır. Sahtecilik imkânsız, doğrulama anlık." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ─── CANVAS particles ─── -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- ─── NAVBAR ─── -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <img src="logo.jpg" alt="CertiChain Logo" class="logo-img" />
+        <span class="logo-text">CertiChain</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#features">Özellikler</a></li>
+        <li><a href="#how-it-works">Nasıl Çalışır</a></li>
+        <li><a href="#about">Hakkında</a></li>
+        <li><a href="#team">Ekip</a></li>
+        <li><a href="#contact">İletişim</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="#contact" class="btn-nav">Başlayın</a>
+        <button class="hamburger" id="hamburger" aria-label="Menü">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section id="hero">
+    <div class="hero-content reveal">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        🚧 Geliştirme Aşamasında
+      </div>
+      <h1>
+        Diploma Sahteciliğine
+        <span class="gradient-text">Blockchain</span> ile<br />
+        Son Veriyoruz
+      </h1>
+      <p class="hero-sub">
+        CertiChain, akademik belgeleri blockchain teknolojisiyle doğrulanabilir kılmak için tasarlanmış
+        erken aşamada bir geliştirici projesidir. Ürün henüz geliştirme sürecindedir.
+      </p>
+      <div class="hero-cta">
+        <a href="#how-it-works" class="btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 3 19 12 5 21 5 3" />
+          </svg>
+          Nasıl Çalışacak?
+        </a>
+        <a href="#contact" class="btn-secondary">Bize Ulaşın</a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal-right">
+      <div class="shield-wrapper">
+        <div class="shield-glow"></div>
+        <img src="logo.jpg" alt="CertiChain Shield" class="shield-img" />
+        <div class="orbit orbit-1">
+          <div class="orbit-dot"></div>
+        </div>
+        <div class="orbit orbit-2">
+          <div class="orbit-dot"></div>
+        </div>
+        <div class="orbit orbit-3">
+          <div class="orbit-dot"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJE DURUMU ─── -->
+  <section id="stats">
+    <div class="stats-container">
+      <div class="stat-card reveal">
+        <div class="stat-icon">📐</div>
+        <div class="stat-label">Mimari Tasarım</div>
+        <div class="stat-status">Tamamlandı</div>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-icon">📄</div>
+        <div class="stat-label">Teknik Doküman</div>
+        <div class="stat-status">Hazırlandı</div>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-icon">💻</div>
+        <div class="stat-label">Geliştirme</div>
+        <div class="stat-status in-progress">Başlamadı</div>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-icon">🚀</div>
+        <div class="stat-label">Lansman</div>
+        <div class="stat-status in-progress">Yakında</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FEATURES ─── -->
+  <section id="features">
+    <div class="section-header reveal">
+      <span class="section-tag">Özellikler</span>
+      <h2>Neden <span class="gradient-text">CertiChain</span>?</h2>
+      <p>Blockchain teknolojisinin gücüyle akademik belgelerinizi sonsuza kadar güvende tutun.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          </svg>
+        </div>
+        <h3>Değiştirilemez Kayıt</h3>
+        <p>Blockchain'e yazılan hiçbir diploma kaydı silinemez veya değiştirilemez. Sonsuza kadar güvende.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="10" />
+            <polyline points="12 6 12 12 16 14" />
+          </svg>
+        </div>
+        <h3>Anlık Doğrulama</h3>
+        <p>İşverenler ve kurumlar diplomanızı saniyeler içinde doğrulayabilir. Bürokratik gecikme yok.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="10" />
+            <line x1="2" y1="12" x2="22" y2="12" />
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+          </svg>
+        </div>
+        <h3>Global Erişim</h3>
+        <p>Dünyanın herhangi bir yerinden, herhangi bir zamanda diplomanıza erişin ve doğrulatın.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+            <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+          </svg>
+        </div>
+        <h3>Şifreli Güvenlik</h3>
+        <p>Kriptografi tabanlı şifreleme ile verileriniz yalnızca yetkili kişilere açık kalır.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+          </svg>
+        </div>
+        <h3>Şeffaf İzleme</h3>
+        <p>Her doğrulama işlemi kayıt altındadır. Kim ne zaman kontrol etti, tam şeffaflık.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+            <circle cx="9" cy="7" r="4" />
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+          </svg>
+        </div>
+        <h3>Merkezi Olmayan</h3>
+        <p>Tek bir sunucuya bağımlı değil. Sistem çökse bile diplomalarınız güvende kalır.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── HOW IT WORKS ─── -->
+  <section id="how-it-works">
+    <div class="section-header reveal">
+      <span class="section-tag">Süreç</span>
+      <h2>Nasıl <span class="gradient-text">Çalışır</span>?</h2>
+      <p>4 basit adımda diplomanızı blockchain ile güvence altına alın.</p>
+    </div>
+    <div class="steps-container">
+      <div class="step-card reveal">
+        <div class="step-number">01</div>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+            <polyline points="14 2 14 8 20 8" />
+          </svg>
+        </div>
+        <h3>Belge Yükleme</h3>
+        <p>Üniversite, diploma belgesini sisteme yükler ve dijital imzayla onaylar.</p>
+      </div>
+      <div class="step-arrow reveal">→</div>
+      <div class="step-card reveal">
+        <div class="step-number">02</div>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="3" width="20" height="14" rx="2" />
+            <line x1="8" y1="21" x2="16" y2="21" />
+            <line x1="12" y1="17" x2="12" y2="21" />
+          </svg>
+        </div>
+        <h3>Hash Oluşturma</h3>
+        <p>Belge kriptografik hash'e dönüştürülür. Benzersiz dijital parmak izi oluşturulur.</p>
+      </div>
+      <div class="step-arrow reveal">→</div>
+      <div class="step-card reveal">
+        <div class="step-number">03</div>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path
+              d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+          </svg>
+        </div>
+        <h3>Blockchain'e Yazma</h3>
+        <p>Hash değeri blockchain'e kalıcı olarak kaydedilir. Değiştirme artık imkânsız.</p>
+      </div>
+      <div class="step-arrow reveal">→</div>
+      <div class="step-card reveal">
+        <div class="step-number">04</div>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+            <polyline points="22 4 12 14.01 9 11.01" />
+          </svg>
+        </div>
+        <h3>Anlık Doğrulama</h3>
+        <p>İşveren veya kurum, belgeyi sisteme yükleyerek anında doğrulama yapar.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section id="about">
+    <div class="about-container">
+      <div class="about-visual reveal-left">
+        <div class="about-card-stack">
+          <div class="about-card card-1">
+            <div class="about-card-icon">🏛️</div>
+            <div>
+              <strong>Üniversite Ortaklıkları</strong>
+              <p>Henüz anlaşma yapılmadı</p>
+            </div>
+            <div class="pending-badge">⏳ Yakında</div>
+          </div>
+          <div class="about-card card-2">
+            <div class="about-card-icon">🎓</div>
+            <div>
+              <strong>Diploma Doğrulama</strong>
+              <p>Geliştirme aşamasında</p>
+            </div>
+            <div class="pending-badge">⏳ Yakında</div>
+          </div>
+          <div class="about-card card-3">
+            <div class="about-card-icon">🌐</div>
+            <div>
+              <strong>Global Erişim</strong>
+              <p>Planlama sürecinde</p>
+            </div>
+            <div class="pending-badge">⏳ Yakında</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-content reveal">
+        <span class="section-tag">Hakkında</span>
+        <h2>Bir <span class="gradient-text">Fikir</span>den Doğdu</h2>
+        <p>
+          CertiChain, diploma ve akademik belge sahteciliğine kalıcı çözüm üretmek amacıyla
+          bir grup geliştirici tarafından tasarlanan blockchain tabanlı bir doğrulama platformu fikridir.
+        </p>
+        <p>
+          Şu an itibarıyla proje <strong>teorik aşamadadır</strong>. Mimari kararlar alındı, teknik
+          dokümantasyon hazırlandı; ancak aktif geliştirme henüz başlamadı. Yakında geliştirme sürecine
+          geçilecektir.
+        </p>
+        <div class="about-highlights">
+          <div class="highlight">
+            <div class="highlight-icon">🧠</div>
+            <div>
+              <strong>Konsept</strong>
+              <span>Mimari ve iş mantığı tasarlandı</span>
+            </div>
+          </div>
+          <div class="highlight">
+            <div class="highlight-icon">📋</div>
+            <div>
+              <strong>Planlama</strong>
+              <span>Teknik dokümanlar hazır</span>
+            </div>
+          </div>
+          <div class="highlight">
+            <div class="highlight-icon">⚙️</div>
+            <div>
+              <strong>Geliştirme</strong>
+              <span>Yakında başlıyor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TEAM ─── -->
+  <section id="team">
+    <div class="section-header reveal">
+      <span class="section-tag">Ekip</span>
+      <h2>Arkasındaki <span class="gradient-text">Ekip</span></h2>
+      <p>CertiChain'i hayata geçiren vizyon sahibi insanlar.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal">
+        <div class="team-avatar">
+          <img src="team_musa.jpg" alt="Musa Cansızoğlu" class="team-photo" />
+        </div>
+        <h3 class="team-name">Musa Cansızoğlu</h3>
+        <p class="team-role">Kurucu / CEO</p>
+        <div class="team-socials">
+          <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+        </div>
+      </div>
+      <div class="team-card reveal">
+        <div class="team-avatar">
+          <img src="team_yunus.jpg" alt="Yunus Emre Kalyoncu" class="team-photo" />
+        </div>
+        <h3 class="team-name">Yunus Emre Kalyoncu</h3>
+        <p class="team-role">Baş Geliştirici</p>
+        <div class="team-socials">
+          <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-link" aria-label="GitHub">⌥</a>
+        </div>
+      </div>
+      <div class="team-card reveal">
+        <div class="team-avatar">
+          <img src="team_ismail.png" alt="İsmail Okukevi" class="team-photo" />
+        </div>
+        <h3 class="team-name">İsmail Okukevi</h3>
+        <p class="team-role">Blockchain Mimarı</p>
+        <div class="team-socials">
+          <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+        </div>
+      </div>
+      <div class="team-card reveal">
+        <div class="team-avatar">
+          <img src="team_ahmet.png" alt="Ahmet Cemil Tahta" class="team-photo" />
+        </div>
+        <h3 class="team-name">Ahmet Cemil Tahta</h3>
+        <p class="team-role">UI/UX Tasarımcısı</p>
+        <div class="team-socials">
+          <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-link" aria-label="Dribbble">◎</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTA BANNER ─── -->
+  <section id="cta-banner">
+    <div class="cta-content reveal">
+      <h2>Projeyi <span class="gradient-text">Birlikte</span> İnşa Edelim</h2>
+      <p>CertiChain henüz geliştirme aşamasına geçmedi. Katkı vermek veya güncel kalmak için bizimle iletişime geçin.
+      </p>
+      <a href="#contact" class="btn-primary btn-large">Bize Ulaşın</a>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section id="contact">
+    <div class="section-header reveal">
+      <span class="section-tag">İletişim</span>
+      <h2>Bizimle <span class="gradient-text">İletişime</span> Geçin</h2>
+      <p>Sorularınız mı var? Size yardımcı olmaktan memnuniyet duyarız.</p>
+    </div>
+    <div class="contact-container">
+      <div class="contact-info reveal">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </div>
+          <div>
+            <strong>E-posta</strong>
+            <a href="mailto:info@certichain.io">info@certichain.io</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+          </div>
+          <div>
+            <strong>Konum</strong>
+            <span>İstanbul, Türkiye</span>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Ad Soyad</label>
+            <input type="text" id="name" placeholder="Adınız" />
+          </div>
+          <div class="form-group">
+            <label for="email">E-posta</label>
+            <input type="email" id="email" placeholder="mail@ornek.com" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Konu</label>
+          <input type="text" id="subject" placeholder="Mesajınızın konusu" />
+        </div>
+        <div class="form-group">
+          <label for="message">Mesaj</label>
+          <textarea id="message" rows="5" placeholder="Mesajınızı buraya yazın..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="22" y1="2" x2="11" y2="13" />
+            <polygon points="22 2 15 22 11 13 2 9 22 2" />
+          </svg>
+          Gönder
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="logo.jpg" alt="CertiChain" class="footer-logo" />
+        <span>CertiChain</span>
+        <p>Blockchain ile akademik güven.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <a href="#features">Özellikler</a>
+          <a href="#how-it-works">Nasıl Çalışır</a>
+          <a href="#about">Hakkında</a>
+        </div>
+        <div class="footer-col">
+          <h4>Şirket</h4>
+          <a href="#team">Ekip</a>
+          <a href="#contact">İletişim</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 CertiChain. Tüm hakları saklıdır.</p>
+      <p>Erken Aşama Geliştirici Projesi 🚧</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
